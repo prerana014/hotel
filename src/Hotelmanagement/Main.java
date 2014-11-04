@@ -18,10 +18,7 @@ import javax.swing.JFrame;
 	                    public void actionPerformed(ActionEvent e) {
 	                        LoginDialog loginDlg = new LoginDialog(frame);
 	                        loginDlg.setVisible(true);
-	                        // if logon successfully
-	                        if(loginDlg.isSucceeded()){
-	                            btnLogin.setText("Hi " + loginDlg.getUsername() + "!");
-	                        }
+	                       
 	                    }
 	                });
 
@@ -31,7 +28,7 @@ import javax.swing.JFrame;
 	        frame.getContentPane().add(btnLogin);
 	        frame.setVisible(true);
 	        
-	        Categories cat = new Categories();
-	        cat.setVisible(true);
+//	        Categories cat = new Categories();
+//	        cat.setVisible(true);
 	    }
 	}
